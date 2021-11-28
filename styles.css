@@ -1,0 +1,116 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d4724bb;
+    font-family: sans-serif;
+}
+
+.board {
+    display:grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    box-shadow: rgba(6, 6, 27, 0.1) 0px 1px 0px, rgba(15, 15, 173, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    width: 40vw;
+    height: 70vh;
+    margin-top: 5vh;
+    background-color: black;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    width:10vw;
+    height:60vh;
+    margin-left: 3vw;
+    color: black;
+}
+
+.speed {
+    width: 8vw;
+    height: 4vw;
+    border-radius: 10px;
+    outline: none;
+}
+
+.speed:hover {
+    transform: scale(1.1);
+}
+
+.plus {
+    background-color: #d12e2e;
+}
+
+.plus:hover {
+    background-color: #e95858;
+}
+
+.minus {
+    background-color: #1e810b;
+}
+
+.minus:hover {
+    background-color: #58e73b;
+}
+
+.speedometer {
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.spd {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.score {
+    text-align: center;
+}
+.board > div {  /* divs inside the board */
+    width: 1fr;      /* 20*15 =300 and 1 div item equals 1*1 = 1 so we have a 300 items in our game-board */
+    height: 1fr;
+}
+
+.invader {
+    background-image:url('./invader1.jpg');
+    width: 1fr;
+    height: 1fr;
+    background-size: cover;
+}
+
+.shooter {
+    background-image:url('./shooter.jpg');
+    width: 1fr;
+    height: calc(1fr * 0.04);
+    background-size: cover;
+}
+
+.bullet {
+    width:.7vw;
+    height:2vh;
+    background-color: red;
+    border-radius:50px 50px 0px 0px;
+}
+
+.boom {
+    background-image:url('./boom.jpg');
+    width: 1fr;
+    height: calc(1fr * 0.04);
+    background-size: cover;
+}
+
+.side {
+
+}
